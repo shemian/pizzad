@@ -68,3 +68,13 @@
     font-family: 'Old Standard TT';
     font-size: xx-large;
 }
+.baked{
+    background-image: url("https://bit.ly/388hgKE");
+    background-repeat: no-repeat;
+    height: 650px;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Playfair Display SC';
+    font-size: xx-large;
+    color:black;
+}
