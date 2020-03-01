@@ -63,4 +63,16 @@
       font-family: 'Emilys Candy';
       font-size: xx-large;
       font-weight: bold;
+     
+  }
+  body{
+      text-align: center;
+  }
+  .feedbck{
+    font-family: 'Emilys Candy';
+    font-family: 'Ovo';
+    font-size: large;
+    font-weight: 500;
+    border-top: 2.5px black;
+    border-bottom: 2.5px black;
   }
