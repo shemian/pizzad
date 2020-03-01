@@ -76,3 +76,13 @@
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
+  .choosy{
+    background-image: url("https://bit.ly/39gpsJW");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    font-family: 'Courgette';
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 500;
+  }
