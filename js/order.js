@@ -36,7 +36,7 @@ function toppingsChange(selectObject) {
         case "veges":
             prize_topping = 110;
             break;
-        case "cheses":
+        case "cheeses":
             prize_topping = 80;
             break;  
         case "bacon":
