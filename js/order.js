@@ -78,7 +78,8 @@ function quantityChange(quantityObject) {
     if (prize_size !=0 && prize_topping !=0 && prize_crust_size) {
 
         total_prize= (prize_size + prize_topping + prize_crust_size) * quantity;
-        console.log(total_prize);
+        // console.log(total_prize);
+        alert( "Thank you for choosing on us. You pizza delivery will be done soon, kindly send us your location.You total prize is " + total_prize + " Because we do a free delivery!")
     }else{
         console.log("prizes are zero");
         console.log("size prize: "+prize_size+"\ntopping: "+prize_topping+"\ncrust: "+prize_crust_size);
