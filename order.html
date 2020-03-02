@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="js/styles.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css" media="all">
     <link rel="stylesheet" href="css/order.css">
     <title>Order</title>
@@ -18,5 +17,60 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div>
+    <form action="">
+        <div class="ord">
+            <div class="row">
+              <div class="col-md-2">
+                <h1>Pizza sizes</h1>
+                <p>Which size would you prefer:</p>
+                <select id="sizes" onchange="sizeChange(this)">
+                    <option value=""> &lt--select size--&gt</option>
+                    <option value="small">small</option>
+                    <option value="medium">medium</option>
+                    <option value="large">large</option>
+                </select>
+              </div>
+              <div class="col-md-2">
+                <h1>Toppings</h1>
+                <p>Which Toppings would you prefer:</p>
+                <select id="Toppings" onchange="toppingsChange(this)">
+                    <option value=""> &lt--select toppings--&gt</option>
+                    <option value="pepperoni">pepperoni</option>
+                    <option value="mushroom">mushroom</option>
+                    <option value="veges">veges</option>
+                    <option value="cheese">cheese</option>
+                    <option value="bacon">bacons</option>
+                    <option value="onions">onions</option>
+                
+                </select>
+              </div>
+              <div class="col-md-2">
+                <h1>Crust</h1>
+                <p>Which Crust would you prefer:</p>
+                <select id="crust" onchange="crustChange(this)">
+                    <option value=""> &lt--select crust--&gt</option>
+                    <option value="thickcrust">Thick crust</option>
+                    <option value="stuffed">stuffed</option>
+                </select>
+            </div>
+
+             <div class="col-md-2">
+                <h1>Quantity</h1>
+                <p>Quantity refered:</p>
+                <input type="number" max="10" min="1" onchange="quantityChange(this)">
+            </div>
+            <div class="col-md-2">
+                <h1>price</h1>
+                <p>Total Price:</p>
+                <p>ksh <span id="total_price">0</span></p>
+            </div>
+
+            
+
+
+
+        </div>
+    </form>
+    <script src="js/order.js"></script>
 </body>
 </html>
