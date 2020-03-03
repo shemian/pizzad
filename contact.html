@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="js/contact.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css" media="all">
     <link rel="stylesheet" href="css/contact.css">
     <title>Contact us </title>
@@ -36,6 +37,17 @@
         offered to you <br> Also the give us your suggestion on ho we can inmprove our services. 
     </p>
     </div>
+    <form>
+        <table>
+            <input type="text" placeholder="Name... " id="name" required>
+            <input type="email" placeholder="Email..." id="email" required>
+        </table><br>
+        <table>
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="Your message here..."></textarea><br>
+        </table>
+        <button id="submit" onclick="clickThis()" type="button">Submit</button>
+
+    </form>
     
 </body>
 </html>

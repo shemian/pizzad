@@ -17,55 +17,57 @@
                 <i class="fa fa-bars"></i>
             </a>
         </div>
+        <div class="container">
+            <div class="jumbotron">
     <form action="">
         <div class="ord">
+            <img class="logo" src="https://bit.ly/2I6aU3U" alt=""> <br>
             <div class="row">
               <div class="col-md-2">
                 <h1>Pizza sizes</h1>
                 <p>Which size would you prefer:</p>
-                <select id="sizes" onchange="sizeChange(this)">
+                <select id="sizes">
                     <option value=""> &lt--select size--&gt</option>
-                    <option value="small">small @ ksh 600</option>
-                    <option value="medium">medium @ ksh 800</option>
-                    <option value="large">large @ ksh1100</option>
+                    <option value="600">small @ ksh 600</option>
+                    <option value="800">medium @ ksh 800</option>
+                    <option value="1100">large @ ksh1100</option>
                 </select>
               </div>
               <div class="col-md-2">
                 <h1>Toppings</h1>
                 <p>Which Toppings would you prefer:</p>
-                <select id="Toppings" onchange="toppingsChange(this)">
+                <select id="Toppings">
                     <option value=""> &lt--select toppings--&gt</option>
-                    <option value="pepperoni">pepperoni @ ksh 200</option>
-                    <option value="mushroom">mushroom @ ksh 150</option>
-                    <option value="veges">veges @ ksh 110</option>
-                    <option value="cheese">cheese @ ksh 80</option>
-                    <option value="bacon">bacons @ 90ksh </option>
-                    <option value="onions">onions @ ksh 50</option>
+                    <option value="200">pepperoni @ ksh 200</option>
+                    <option value="150">mushroom @ ksh 150</option>
+                    <option value="110">veges @ ksh 110</option>
+                    <option value="80">cheese @ ksh 80</option>
+                    <option value="90">bacons @ 90ksh </option>
+                    <option value="50">onions @ ksh 50</option>
                 
                 </select>
               </div>
               <div class="col-md-2">
                 <h1>Crust</h1>
                 <p>Which Crust would you prefer:</p>
-                <select id="crust" onchange="crustChange(this)">
+                <select id="crust">
                     <option value=""> &lt--select crust--&gt</option>
-                    <option value="thickcrust">Thick crust @ ksh 100</option>
-                    <option value="stuffed">stuffed @ ksh 150</option>
+                    <option value="100">Thick crust @ ksh 100</option>
+                    <option value="150">stuffed @ ksh 150</option>
                 </select>
             </div>
 
              <div class="col-md-2">
                 <h1>Quantity</h1>
                 <p>Quantity refered:</p>
-                <input type="number" max="10" min="1" onchange="quantityChange(this)">
-            </div>
-            <div class="col-md-2">
-                <h1>price</h1>
-                <p>Total Price:</p>
-                <p>ksh <span id="total_price">0</span></p>
+                <input id="number" value="number" type="number" max="10" min="1" >
             </div>
         </div>
+        <button type="button" class="button" id="order" onclick="quantityChange()">Order</button>
+
     </form>
+            </div>
+            </div>
     <script src="js/order.js"></script>
 </body>
 </html>
